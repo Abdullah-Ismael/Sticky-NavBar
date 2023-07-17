@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+nav .logo {
+  color: red;
+  font-size: 26px;
+  text-align: center;
+  font-family: monospace;
+}
+
+nav .links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  font-family: cursive;
+}
+
+nav .links a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+nav.active {
+  background-color: black;
+}
+
+nav a.active {
+  color: white;
+}
+
+.home {
+  background-image: url(img/keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+.pars {
+  padding: 50px 20px;
+  font-family: cursive;
+}
